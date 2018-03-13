@@ -1,0 +1,21 @@
+
+  <table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th> 
+    <th>Surname</th>
+  </tr>
+  <tr>
+    <td><h1><%= @post.title %></h1></td>
+    <td><p><%= @post.body %></p></td> 
+    <td><a href="/<%= @post.id %>/edit">edit</a></td>
+  </tr>
+  </table>
+
+<form action="/<%= @post.id %>" method="POST">
+   <input type="hidden" title="_method" value="DELETE">
+   <div>
+   <input type="submit" value="Delete">
+ </div>
+ 
+</form>

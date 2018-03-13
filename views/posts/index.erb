@@ -1,0 +1,22 @@
+<h1>Welcome to the homepage</h1>
+
+<% @posts.each do |post| %>
+<div>
+
+
+  <table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th> 
+    <th>Surname</th>
+  </tr>
+  <tr>
+    <td><a href="/<%=post.id %>">find</a></td>
+    <td><%= post.title %></td> 
+    <td><%= post.body %></td>
+  </tr>
+  </table>
+
+
+</div>
+<% end %>
